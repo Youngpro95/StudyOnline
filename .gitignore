@@ -105,3 +105,7 @@ dist
 
 .cache
 .parcel-cache
+
+package-lock.json
+package.json
+yarn.lock
