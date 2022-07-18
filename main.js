@@ -1,6 +1,6 @@
 // // // // // // // // import _ from 'lodash'
 
-const { reject } = require("lodash")
+// const { reject } = require("lodash")
 
 // const { first } = require("lodash");
 
@@ -220,8 +220,8 @@ const { reject } = require("lodash")
 // const f = ({name})=> `${name}이가 있습니다.`
 // const fg = x => new Promise((resolve,reject)=> resolve(x)).then(g).then(f)
 
-// fg("정민").catch(_ => _).then(log) // 객체에 없습니다.
-// fg("영민").catch(_ => _).then(log) // 영민이가 있습니다.
+// // fg("정민").catch(_ => _).then(log) // 객체에 없습니다.
+// // fg("영민").catch(_ => _).then(log) // 영민이가 있습니다.
 
 // const arr = [{
 //   name : 'kim',
@@ -243,6 +243,14 @@ const { reject } = require("lodash")
 //   age : 30
 // },
 // ]
+
+// a= String("hello world");
+// console.log(a.includes('w'));
+// console.log(a.includes('hello'));
+
+
+
+
 // function findAge(name){
 //   return (item)=>{
 //     return item.name === name;
@@ -250,3 +258,6 @@ const { reject } = require("lodash")
 
 // console.log(arr.find(findAge('jin')).age)
 // console.log(arr.find(findAge('woo')).age)
+
+const str = '0123 '
+console.log(str.length)
