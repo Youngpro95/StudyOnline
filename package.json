@@ -1,7 +1,7 @@
 {
   "name": "codingstudy",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h2 align='center'>온라인 강의 따라해보기 레포</h2>",
   "source": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +14,16 @@
     "parcel": "^2.6.2"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
-  }
+    "lodash": "^4.17.21",
+    "ramda": "^0.28.0"
+  },
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youngpro95/StudyOnline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Youngpro95/StudyOnline/issues"
+  },
+  "homepage": "https://github.com/Youngpro95/StudyOnline#readme"
 }
