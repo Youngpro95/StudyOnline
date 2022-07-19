@@ -259,5 +259,71 @@
 // console.log(arr.find(findAge('jin')).age)
 // console.log(arr.find(findAge('woo')).age)
 
-const str = '0123 '
-console.log(str.length)
+// const str = '0123'
+// console.log(str.length)
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+
+// console.log( arr.filter(inBetween(3, 6)) ); // 3,4,5,6
+
+// console.log( arr.filter(inArray([1, 2, 10])) ); // 1,2
+
+// function inBetween( a,b ){
+//   return function (x){
+//     return x >= a && x<= b;
+//   }
+// }
+
+// function inArray(arr){
+//   return function(x){
+//     return arr.includes(x);
+//   }
+// }
+
+// const btn=document.getElementById('yongseongBtn');
+
+// let myInfo={
+//    name:"yongseong",
+//    show: function(){
+//       console.log(this.name);
+//       btn.addEventListener('click',(function(){
+//          console.log(this);
+//       }).bind(this));
+//    }
+// };
+
+// myInfo.show();
+
+// const c = "c";
+
+// function outer() {
+//   const a = "a";
+//   const b = "b";
+
+//   function inner() {
+//     const a = "a2";
+//     console.log(c);
+//   }
+
+//   return inner;
+// }
+
+// const closureFunction = outer();
+// console.log(c)
+// closureFunction();
+
+// var a = 1;
+// function outer() {
+//   function inner() {
+//     console.log(a);
+//     var a = 3;
+//   }
+//   inner();
+//   console.log(a);
+// }
+
+// outer();
+// console.log(a)
+
+let createDiv = document.createElement('div')
+document.body.appendChild(createDiv)
