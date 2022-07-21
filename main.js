@@ -1,5 +1,7 @@
 // // // // // // // // import _ from 'lodash'
 
+const { functionsIn } = require("lodash");
+
 // const { reject } = require("lodash")
 
 // const { first } = require("lodash");
@@ -325,5 +327,56 @@
 // outer();
 // console.log(a)
 
-let createDiv = document.createElement('div')
-document.body.appendChild(createDiv)
+// let createDiv = document.createElement('div')
+// document.body.appendChild(createDiv)
+
+// function repeat(n,f){
+//   for(var i = 0; i < n ; i++){
+//     f(i);
+//     console.log(typeof f)
+//   }
+// }
+// var logAll = function (i){
+//   console.log(i);
+  
+// }
+
+// repeat(5, logAll);
+// function foo() {
+//   console.log('global foo');
+// }
+
+// function bar() {
+//   function foo() {
+//     console.log('local foo');
+//   }
+//   foo();
+// }
+// bar();
+// console.log('----');
+// console.log(foo());
+
+// var x = 1;
+
+// function testX() {
+//   var x = 30;
+//   return x
+// }
+// if ( true ) {
+//   var x = 10;
+// }
+// for ( var x = 0; x <20; x++){}
+// console.log(x);
+// console.log(testX());
+
+var x = 1;
+function foo() {
+  var x = 10;
+  bar();
+}
+function bar() {
+  console.log(x);
+}
+
+foo();
+bar();
