@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const arr = [
+      { name: "kim", age: 10 },
+      {
+        name: "choi",
+        age: 13,
+      },
+      {
+        name: "jin",
+        age: 20,
+      },
+      {
+        name: "woo",
+        age: 50,
+      },
+      {
+        name: "woo",
+        age: 20,
+      },
+      {
+        name: "woo",
+        age: 30,
+      },
+    ];
+    function findAge(inputName){
+      let name = inputName.trim().toLowerCase();
+      const foundAge = arr
+      .filter(item => item.name === name)
+      .map(({age}) => age)
+      .sort((a,b)=> b - a)
+      return foundAge;
+    } 
+    console.log(findAge(" jIN")); // [20];
+    findAge(" wOO   "); // [50, 30, 20];
+
+    // const arr = [
+    //   { name: "kim", age: 10 },
+    //   {
+    //     name: "park",
+    //     age: 15,
+    //   },
+    //   {
+    //     name: "lee",
+    //     age: 12,
+    //   },
+    //   {
+    //     name: "choi",
+    //     age: 13,
+    //   },
+    //   {
+    //     name: "jin",
+    //     age: 20,
+    //   },
+    //   {
+    //     name: "woo",
+    //     age: 30,
+    //   },
+    // ];
+    // function findAge(inputName){
+    //   let name = inputName.trim().toLowerCase();
+    //   return arr.find(item => item.name === name).age
+    // }
+    // console.log(findAge(" jIN")); // 20;
+    // findAge(" wOO   "); // 30;
+
+    // const original = [{ a: 1 }, { a: 5 }, { a: 2 }, { a: 3 }];
+    // const findFunction = (item) => item.a === 5;
+    // const a = original.find(findFunction);
+    // console.log(a);
+    // const a5 = original.filter(findFunction);
+    // console.log(a5);
+  </script>
+</html>
