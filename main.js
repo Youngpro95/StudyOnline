@@ -381,9 +381,9 @@ const { functionsIn } = require("lodash");
 // foo();
 // bar();
 
-const numbers = [1,2,3,4]
-const fruits = ['apple','Banana', 'Cherry']
+// const numbers = [1,2,3,4]
+// const fruits = ['apple','Banana', 'Cherry']
 
-fruits.forEach(function ( item, i){
-  console.log(item, i);
-})
+// fruits.forEach(function ( item, i){
+//   console.log(item, i);
+// })
