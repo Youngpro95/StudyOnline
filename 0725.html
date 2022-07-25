@@ -9,13 +9,13 @@
 <body>
   <input type='number' /> 
   <button>시작</button> 
-  <div></div> 
+  <div>10</div> 
   <!-- <button id='button' onclick="func();">Click ME!</button>  -->
 </body>
 <script>
   const inputVal = document.body.querySelector('input')
-  const startButton = document.body.querySelector('.start')
-  const finishButton = document.body.querySelector('.finish')
+  const startButton = document.body.querySelector('button')
+  // const finishButton = document.body.querySelector('.finish')
   let timerIds = [];
   // const func = item => {
   //   setInterval(() => {
@@ -23,18 +23,21 @@
   //   }, 1000);
   // }
   const timerStart  = startButton.addEventListener("click" , ()=>{
-    newtimerIds = setInterval(() => {
-      console.log(inputVal.value)
-    }, 10000);
-    timerIds.push(newtimerIds);
+    item = setInterval(() => {
+      let divCount = document.body.querySelector('div').innerText -= 1;
+      if (divCount === 0){
+        clearTimeout(item);
+        console.log(inputVal.value);
+      }
+    }, 1000);
   })
-  finishButton.addEventListener("click" , () =>{
-    timerIds.forEach(item =>{
-      clearTimeout(item);
-      console.log(`timerID ${item} 중지`)
-    });
-    timerIds = [];
-  })
+
+  // finishButton.addEventListener("click" , () =>{
+  //   timerIds.forEach(item =>{
+  //     clearTimeout(item);
+  //     console.log(`timerID ${item} 중지`)
+  //   });
+  // })
 
 </script>
 </html>
